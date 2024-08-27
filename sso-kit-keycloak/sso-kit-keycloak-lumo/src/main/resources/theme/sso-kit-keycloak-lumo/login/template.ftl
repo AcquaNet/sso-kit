@@ -38,8 +38,9 @@
             </#list>
         </#if>
     </head>
-
-    <body class="${properties.kcBodyClass!}">
+	<body class="${properties.kcBodyClass!}">
+	<div class="container">
+	<div class="left-panel">
     <div class="${properties.kcLoginClass!}">
         <div id="kc-header" class="${properties.kcHeaderClass!}">
             <div id="kc-header-wrapper"
@@ -181,6 +182,20 @@
 
         </div>
     </div>
+	 </div>
+		<div class="right-panel">
+		    <div class="image-container"></div>
+            <div class="caption">
+                <h3>Tu mejor préstamo,</h3>
+                <h3>nunca estuvo tan cerca.</h3>
+            </div>
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+	</div>
     </body>
     </html>
 </#macro>

@@ -1,0 +1,15 @@
+.login-rich-content {
+  background-image: url("../../resources/images/d05d13a4bbe979abcb4f16b76daea77f1a0ef5bc.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  height: 500px;
+}
+.login-rich-content vaadin-login-form {
+  align-items: center;
+  display: flex;
+  max-width: 300px;
+}
+.login-rich-content vaadin-login-form-wrapper {
+  background-image: none;
+}

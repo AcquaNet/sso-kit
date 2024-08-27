@@ -3,7 +3,80 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  margin: 0px;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+	width: 100%;
+}
+
+.left-panel {
+  width: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.right-panel {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #192434;
+    overflow: hidden;
+}
+
+.image-container {
+    width: 80%;
+    height: 55%;
+	background: url("../images/d05d13a4bbe979abcb4f16b76daea77f1a0ef5bc.png") center no-repeat;
+    background-size: contain;
+}
+  
+.caption {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    text-align: center;
+	width: 100%;
+	font-family: Inter, var(--default-font-family);
+	font-size:60px
+
+}
+
+.caption h3 {
+    margin: 0;
+}
+
+.dots {
+    position: absolute;
+    bottom: 27%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #676F79;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: #FFFFFF;
 }
 
 .login {
@@ -20,9 +93,9 @@ body {
 .header-wrapper {
   height: 100%;
 }
-
+  
 .header-wrapper {
-  background-color: var(--lumo-primary-color);
+  background-color: #192434;
   box-sizing: border-box;
   color: var(--lumo-primary-contrast-color);
   display: flex;
@@ -259,10 +332,7 @@ body {
 }
 
 .button-primary {
-  background-color: var(
-    --_lumo-button-primary-background-color,
-    var(--lumo-primary-color)
-  );
+  background-color: #192434;
   color: var(--_lumo-button-primary-color, var(--lumo-primary-contrast-color));
   font-weight: 600;
   min-width: calc(var(--lumo-button-size) * 2.5);
@@ -292,6 +362,11 @@ body {
     width: 100%;
     min-height: 100%;
   }
+  
+  .right-panel{ 
+    display:none;
+  }
+  
 }
 
 /* Landscape small screen */
@@ -306,6 +381,11 @@ body {
   .header-wrapper {
     justify-content: flex-start;
   }
+  
+  .right-panel{ 
+    display:none; 
+  }
+    
 }
 
 /* Landscape really small screen */
@@ -322,4 +402,5 @@ body {
   .login-header {
     flex: auto;
   }
+   
 }
